@@ -12,4 +12,5 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 //Math.random will give a number lesser 1
 //Math.floor(Math.random)*(maximum - minimum +1) this expression will round down the value
 //* minimum will add 1 to the random number between 0 to 99
+
 //it will give you a random number between 0 to 100
