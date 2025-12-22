@@ -10,7 +10,24 @@
 function getAngleType(angle) {
    if (angle === 90) return "Right angle";
    // read to the end, complete line 36, then pass your test here
+
+   expect(getAngleType(90)).toBe("Right angle");
+
 }
+  else if (angle < 90 && angle > 0) {
+    return "Acute angle";
+  }
+  else if (angle > 90 && angle < 180) {
+    return "Obtuse angle";
+  }
+  else if (angle === 180) {
+    return "Straight angle";
+  }
+  else {
+    return "Invalid angle";
+  }
+
+
 
 // we're going to use this helper function to make our assertions easier to read
 // if the actual output matches the target output, the test will pass
@@ -20,6 +37,7 @@ function assertEquals(actualOutput, targetOutput) {
     `Expected ${actualOutput} to equal ${targetOutput}`
   );
 }
+
 
 // Acceptance criteria:
 
@@ -33,6 +51,13 @@ function assertEquals(actualOutput, targetOutput) {
 const right = getAngleType(90);
 assertEquals(right, "Right angle");
 
+describe("getAngleType", () => {
+  test("returns 'Right angle' when angle is exactly 90 degrees", () => {
+    expect(getAngleType(90)).toBe("Right angle");
+  });
+});
+
+
 // Case 2: Identify Acute Angles:
 // When the angle is less than 90 degrees,
 // Then the function should return "Acute angle"
@@ -43,7 +68,10 @@ assertEquals(acute, "Acute angle");
 // When the angle is greater than 90 degrees and less than 180 degrees,
 // Then the function should return "Obtuse angle"
 const obtuse = getAngleType(120);
-// ====> write your test here, and then add a line to pass the test in the function above
+
+else if (angle > 90 && angle < 180) {
+  return "Obtuse angle";
+}
 
 // Case 4: Identify Straight Angles:
 // When the angle is exactly 180 degrees,
