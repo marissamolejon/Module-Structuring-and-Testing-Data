@@ -23,3 +23,14 @@ console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );
+
+console.assert(formatAs12HourClock("00:00") === "12:00 am", "Midnight failed");
+console.assert(formatAs12HourClock("01:00") === "01:00 am", "Early morning failed");
+console.assert(formatAs12HourClock("08:00") === "08:00 am", "Morning failed");
+console.assert(formatAs12HourClock("12:00") === "12:00 pm", "Noon failed");
+console.assert(formatAs12HourClock("13:00") === "01:00 pm", "Afternoon failed");
+console.assert(formatAs12HourClock("23:00") === "11:00 pm", "Late night failed");
+console.assert(formatAs12HourClock("12:30") === "12:30 pm", "12:30 pm failed");
+console.assert(formatAs12HourClock("00:45") === "12:45 am", "12:45 am failed");
+console.assert(formatAs12HourClock("09:15") === "09:15 am", "09:15 am failed");
+
