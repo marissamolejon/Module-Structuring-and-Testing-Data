@@ -14,7 +14,7 @@ function capitalise(str) {
 // Function parameters already count as declared variables. You cannot redeclare them with let
 // =============> write your new code here
  function capitalise(str) {
- return str = `${str[0].toUpperCase()}${str.slice(1)}`;
+ return `${str[0].toUpperCase()}${str.slice(1)}`;
  }
 
   
