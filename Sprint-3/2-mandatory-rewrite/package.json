@@ -1,0 +1,14 @@
+{
+  "name": "2-mandatory-rewrite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-get-angle-type.js",
+  
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
